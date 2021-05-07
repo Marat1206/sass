@@ -1,0 +1,19 @@
+header {
+    background: $main-color;
+    @include transform(rotate(180deg));
+    
+    p{
+        @include transform(scale(0.8));
+        color: white;
+     font-size: x-large;
+     margin: 0;
+    }
+}
+
+
+div {
+    @extend %block-display;
+    @include transform(scale(1));
+    @include transform(rotate(180deg)) 
+        
+}
